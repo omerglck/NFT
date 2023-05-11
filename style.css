@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+/*NAVBAR*/
+.navbar{
+    background: radial-gradient( circle at 10% 30%,/* yuvarlak kismin 10% olan saga-saol hiza 30% olan yukari asagi hiza*/ rgb(90, 92, 106) 8%, rgb(32, 45, 58) 81.3% );
+    display: flex;
+    flex-direction: row; /*yatayda hizalar column yaparsak dikeyde hizalar*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+    position: fixed;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap:10px; /*boşluk*/
+}
+.navbar .menu ul{
+    display: flex;
+    gap:20px;
+}
+.navbar .menu ul li{
+    list-style: none;
+}
+.navbar .menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.navbar .menu ul li a:hover{
+    color:#940041;
+    font-weight: bold;
+}
+.navbar .action{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.navbar .action i{
+    color:#fff;
+}
+.navbar .action button{
+    background-color:#940041;
+    border:none;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius:5px;
+}
+/*BANNER*/
+.banner{
+    display: flex;
+    flex-direction: row; /*YATAY OLARAK HİZALADIK*/
+    padding: 90px 0px 20px 50px;
+    background-color: black;
+}
+.banner .left{
+    width: 80%;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top:20px;
+} 
+.banner .left h1{
+    font-size:58px;
+    font-weight: 600;
+}
+.banner .left h3{
+    font-weight: 300;
+}
+.banner .left button{
+    border:3px solid #940041;
+    background-color: #380018;
+    color:#fff;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+    margin-top:60px;
+}
+.banner .left button i{
+    background-color:#940041;
+    padding: 10px;
+    border:none;
+} 
+
+.banner .right{
+}
+.banner .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*fotoğrafın pixeli ile oynamaz*/
+
+}
+
+/*PRODUCT*/
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    background-color: black;
+    background-image: radial-gradient(rgba(0,0,0,0.8) 2%, black), url('/images/nick-nice-gPm8h3DS1s4-unsplash.jpg');
+    padding: 80px 50px;
+}
+.product h1{
+    margin-bottom: 50px;
+}
+.product h1 span{
+    color:#940041; 
+    
+}
+.product .cards{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap; /*taşmalarda alt satıra iner*/
+    align-items: center;
+    justify-content: center;
+    gap:10px
+    
+}
+.card img{
+    width:230px; /*flex yapısı için kendisine sunulan alanın width:100% ile yer alır*/ 
+    height: 300px;
+    object-fit: cover;
+}
+.product .cards .card{
+
+}
+.product .card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #940041;
+    gap:10px;
+}
+.product .card-content button{
+    background-color:black;
+    border:none;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius:5px;
+    margin-left: 5px;
+    border-radius: 10px;
+
+}
+.product .card-process{
+    background-color: #940041;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius:0 0 10px 10px;
+}
+/*ABOUTS*/
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    text-align: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7) 70%, black), url(images/back.png);
+    color:#fff;
+}  
+.about .abouts{
+    display: flex;
+    gap:15px;
+    
+}
+.about .abouts-card{
+
+}
+.abouts-card i{
+    margin-bottom: 15px;
+}
+.abouts-card h3{
+    text-transform: uppercase;
+    color:#940041;
+
+}
+.abouts-card p{
+    padding: 0 45px;
+}
+.about h1{
+    margin-bottom: 50px;
+}
+.about h1 span{
+    color:#940041; 
+    
+}
+
+/*SPONSOR*/
+.sponsor{
+    background-color: black;
+    color:#fff;
+    padding:50px 50px;
+    text-align: center;
+}
+.sponsor h1{
+    margin-bottom: 50px;
+
+}
+.sponsor h1 span{
+    color:#940041;
+}
+.sponsor img{
+    padding: 10px;
+    margin: 5px;
+}
+.sponsor img:nth-child(2n){
+    background-color: #121b22;
+}
+
+/*FOOTER*/
+footer{
+    background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    display: flex;
+    gap: 50px;
+    color: #fff;
+    padding: 50px 50px;
+}
+.footer-left{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.footer-left  i{
+    font-size: 22px;
+    margin-left: 3px;
+
+}
+.footer-left i:hover{
+    color:#940041;
+    transform: scale(1.3) translateY(-2px);
+    transition:all .7s ;
+}
+.footer-left .rights{
+    margin-top: 70px;
+}
+.footer-left .logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.footer-right{
+}
+.footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-right ul{
+    width: 200px;
+    text-align: start;
+}
+.footer-right ul li {
+    list-style-type: none;
+
+} 
+.footer-right ul li:hover{
+    color:#940041;
+    transform: scale(1.2) translateY(-2px);
+    transition: ease .7s;
+    cursor: pointer;
+    
+}
+
+.footer-right ul li:nth-child(1){
+    font-size: 24px;
+    color:black;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.footer-right ul li:nth-child(1):hover{
+    color:#940041;
+}
+
+@media only screen and(min-width:768px) and (max-width:1023px){
+    .banner{
+    flex-direction: column;
+    align-items: center;
+    }
+}
